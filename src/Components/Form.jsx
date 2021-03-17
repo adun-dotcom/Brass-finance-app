@@ -70,10 +70,9 @@ export default class Form extends React.Component {
             </div>
             <div className="btn-submit">
               {this.state.submitted &&
-              emailRegex.test(this.state.email) &&
-              this.state.password.length < 6 ? (
+             this.state.email &&
+              this.state.password? 
                 <Link to="/Welcome">
-                  {' '}
                   <Button
                     type="submit"
                     btnText="Log me in"
@@ -81,14 +80,14 @@ export default class Form extends React.Component {
                     padding="1.5rem"
                   />
                 </Link>
-              ) : (
+               : 
                 <Button
                   type="submit"
                   btnText="Log me in"
                   width="100%"
                   padding="1.5rem"
                 />
-              )}
+              }
             </div>
 
             <span>
