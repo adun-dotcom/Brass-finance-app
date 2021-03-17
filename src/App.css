@@ -1,38 +1,62 @@
 .App {
   text-align: center;
+  margin: auto;
+  max-width: 100%;
+  width: 1200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 70vh;
 }
 
-.App-link {
-  color: #61dafb;
+.form-wrapper {
+  width: 400px;
+  padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-wrapper h1{
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+
+.email-field,
+.password-field {
+  width: 100%;
+}
+
+.error-field{
+  color: red;
+  text-align: left;
+}
+input {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background: #f6f7f9;
+   color: #6c7884;
+  border: 1px solid #edeff1;
+  outline: none;
+}
+
+input::placeholder {
+  color: #6c7884;
+}
+
+.btn-submit{
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+}
+.form-wrapper span,
+.form-wrapper span a{
+  font-size: 1.3rem;
+  color: #6c7884;
+}
+
+.disable-btn{
+  pointer-events: painted;
 }
