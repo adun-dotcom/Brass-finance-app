@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from '../Form'
+import AppLogin from '../UserLogin'
 import { LoginNav } from '../LoginNav'
 
 
@@ -7,7 +7,7 @@ export function Login(){
     return(
         <div>
            <LoginNav text="open an account" />
-            <Form/>
+            <AppLogin/>
         </div>
     )
 }

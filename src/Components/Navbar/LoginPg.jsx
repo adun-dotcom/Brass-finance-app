@@ -26,7 +26,8 @@ export default class Form extends React.Component {
     switch (name) {
       case 'email':
         formError.email = emailRegex.test(value)
-          ? '' : 'Please enter a valid email address'
+          ? ''
+          : 'Please enter a valid email address'
         break
       case 'password':
         formError.password = value.length < 6 ? 'minimum password is 6' : ''
@@ -35,10 +36,10 @@ export default class Form extends React.Component {
     }
     this.setState({ formError, [name]: value })
   }
-  
+
   handleClick = (e) => {
     e.preventDefault()
-    this.setState({disabled: true})
+    this.setState({ disabled: true })
   }
   render() {
     const formError = { ...this.state.formError }
@@ -71,25 +72,24 @@ export default class Form extends React.Component {
             </div>
             <div className="btn-submit">
               {this.state.disabled &&
-             this.state.email &&
-              this.state.password? 
-                <Link to="/Dashboard">
+              this.state.email &&
+              this.state.password ? (
+                <Link to="/Home">
                   <Button
                     type="submit"
                     btnText="Log me in"
                     width="100%"
                     padding="1.5rem"
-                    
                   />
                 </Link>
-               : 
+              ) : (
                 <Button
                   type="submit"
                   btnText="Log me in"
                   width="100%"
                   padding="1.5rem"
                 />
-              }
+              )}
             </div>
 
             <span>

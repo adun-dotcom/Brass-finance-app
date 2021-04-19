@@ -2,6 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 body {
   margin: 0;
@@ -9,7 +11,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale
 }
 
 code {
@@ -24,4 +26,11 @@ html{
 body{
   font-size: 1.6rem;
  color: #333d47 !important;
+ overflow-y: hidden;
+}
+
+@media (max-width:1024px){
+  body{
+    overflow-y: hidden;
+  }
 }

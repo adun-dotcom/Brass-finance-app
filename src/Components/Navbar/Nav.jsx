@@ -4,9 +4,9 @@ import {NavTag} from '../Style'
 export function Nav({children}) {
     
         return (
-          <NavTag>
-            {children}
-          </NavTag>
+          
+            <NavTag className="container">{children}</NavTag>
+          
         )
     
 }

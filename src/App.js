@@ -2,7 +2,7 @@
 import Routes from './Route/index'
 function App() {
   return (
-    <div className="App">
+    <div >
       <Routes/>
     </div>
   );

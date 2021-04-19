@@ -6,11 +6,12 @@ import {
   TextSection,
   ImageSection,
 } from '../Style'
-import { Mylogo } from '../Assets/logo'
+import { Mylogo } from '../../Assets/logo'
+import Brass from '../../Assets/brass.png'
 import { Link } from 'react-router-dom'
 export function Content() {
   return (
-    <main>
+    <main className="container">
       <Section clsName="top-content">
         <span className="top-content-span">coming soon</span>
         <p className="top-content-text">
@@ -39,15 +40,7 @@ export function Content() {
         <ImageSection>
           <img
             className="span-img"
-            src="http://purepng.com/public/uploads/large/purepng.com-credit-cardobjectsdiamond-ringcardobjectbankcreditatmdebit-631522323297n1nru.png"
-            alt=""
-          />
-          <div className="span-logo">
-            <Mylogo />
-          </div>
-
-          <img
-            src="https://static.dribbble.com/users/26222/screenshots/2667274/transwire_shot.png"
+            src={Brass}
             alt=""
           />
         </ImageSection>

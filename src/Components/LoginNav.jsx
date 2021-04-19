@@ -1,16 +1,17 @@
 import React from 'react'
-import { Mylogo } from '.././Components/Assets/logo'
+import { Mylogo } from '../Assets/logo'
 import { Link } from 'react-router-dom'
-import {NavTag} from './Style'
+  import { Nav } from './Navbar/Nav'
 
 
 export function LoginNav({text}){
     return (
-      <NavTag>
+      
+      <Nav>
         <Link to="/">
           <Mylogo />
         </Link>
         <a href="#" className="link-tag">{text}</a>
-      </NavTag>
+      </Nav>
     )
 }
